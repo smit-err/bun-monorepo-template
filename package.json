@@ -1,12 +1,19 @@
 {
-  "name": "bun-monorepo-template",
-  "module": "index.ts",
-  "type": "module",
-  "private": true,
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  }
+	"name": "bun-monorepo-template",
+	"type": "module",
+	"workspaces": ["apps/*", "packages/*"],
+	"scripts": {
+		"dev": "turbo dev",
+		"build": "turbo build",
+		"preview": "turbo preview"
+	},
+	"private": true,
+	"devDependencies": {
+		"@types/bun": "latest",
+		"turbo": "^2.4.4"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"packageManager": "bun@1.2.7"
 }
