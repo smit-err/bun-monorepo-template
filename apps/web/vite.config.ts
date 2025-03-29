@@ -6,7 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
 	plugins: [
-		TanStackRouterVite({ autoCodeSplitting: true }),
+		TanStackRouterVite({ target: "react" }),
 		viteReact(),
 		tailwindcss(),
 	],
@@ -17,7 +17,7 @@ export default defineConfig({
 	resolve: {
 		alias: {
 			"@": resolve(__dirname, "./src"),
-			"@org/ui": resolve(__dirname, "../../packages/ui/src/*"),
+			"@org/ui": resolve(__dirname, "../../packages/ui/src"),
 		},
 	},
 });
