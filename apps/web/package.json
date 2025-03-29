@@ -5,8 +5,7 @@
 	"scripts": {
 		"dev": "bunx --bun vite",
 		"build": "bunx --bun vite build && tsc",
-		"serve": "vite preview",
-		"test": "vitest run"
+		"preview": "vite preview"
 	},
 	"dependencies": {
 		"@tanstack/react-router": "^1.114.3",
