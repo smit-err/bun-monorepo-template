@@ -1,3 +1,9 @@
 {
-	"extends": "@org/tsconfig/react.json"
+	"extends": "@org/tsconfig/react.json",
+	"compilerOptions": {
+		"baseUrl": "./src",
+		"paths": {
+			"@org/ui*": ["./*"]
+		}
+	}
 }
