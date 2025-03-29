@@ -10,6 +10,10 @@ export default defineConfig({
 		viteReact(),
 		tailwindcss(),
 	],
+	server: {
+		hmr: true,
+		port: 3000,
+	},
 	resolve: {
 		alias: {
 			"@": resolve(__dirname, "./src"),
